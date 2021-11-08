@@ -34,10 +34,10 @@ int main(void)
   int key = 0;
   int ret = 0;
 
-  std::cout << "Input the size of data that you want to register: ";
+  std::cout << "Enter the size of data that you want to register: ";
   std::cin >> size;
 
-  std::cout << "Input the keys and values (The keys are needed to be input in ascending order)" << std::endl;
+  std::cout << "Enter the keys and values (The keys are needed to be entered in ascending order)" << std::endl;
   for (int i = 0; i < size; i++) {
     int key   = 0;
     int value = 0;
@@ -49,7 +49,7 @@ int main(void)
     data.push_back({key, value});
   }
 
-  std::cout << "Input the key you look for: ";
+  std::cout << "Enter the key you look for: ";
   std::cin >> key;
 
   ret = binary_search(data, key);
